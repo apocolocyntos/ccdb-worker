@@ -34,12 +34,12 @@ def run_orca(program,job_dir,calculation_setup):
 	# get setup from document
 	scf_type = calculation_setup['scf_type']
 	functional = calculation_setup['functional']
-	basis_set = calculation_setup['basis_set']
+	basisset = calculation_setup['basisset']
 	charge = str(calculation_setup['charge'])
 	multiplicity = str(calculation_setup['multiplicity'])
 	# write input file
 	f = open(job_dir + '/' + input_file, 'w+')
-	f.write("! " + scf_type + " " + functional + " " + basis_set)
+	f.write("! " + scf_type + " " + functional + " " + basisset)
 	if calculation_setup['optimization']:
 		f.write(" opt")
 	if calculation_setup['frequency']:
