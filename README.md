@@ -5,7 +5,7 @@ Worker client for the Computational Chemistry Database.
 
 create the config file „config.json“ in the same directory following this scheme:
 
-{
+'{
 	"database": {
 		"host": "",
 		"port": "",
@@ -22,4 +22,4 @@ create the config file „config.json“ in the same directory following this sc
 			"version": ""
 		}
 	}
-}
+}'
