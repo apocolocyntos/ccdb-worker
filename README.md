@@ -1,7 +1,7 @@
 # ccdb-worker
 Worker client for the Computational Chemistry Database.
 
-# setup
+## setup
 
 create the config file „config.json“ in the same directory following this scheme:
 
