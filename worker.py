@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 
 import sys,os,time,uuid,tarfile,ConfigParser
 import json,couchdb,datetime,socket,random,shutil
@@ -65,7 +65,8 @@ def run_orca(program,job_dir,calculation_setup):
 
 
 # read settings
-config_file = open(os.path.split(os.path.abspath(sys.argv[0]))[0] + '/config.json','r')
+home_dir = os.path.expanduser("~")
+config_file = open(home + '/.config/ccdb/config.json','r')
 settings = json.loads(config_file.read())
 
 
