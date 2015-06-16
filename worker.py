@@ -66,7 +66,7 @@ def run_orca(program,job_dir,calculation_setup):
 
 # read settings
 home_dir = os.path.expanduser("~")
-config_file = open(home + '/.config/ccdb/config.json','r')
+config_file = open(home_dir + '/.config/ccdb/config.json','r')
 settings = json.loads(config_file.read())
 
 
