@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys,os,time,uuid,tarfile,ConfigParser
 import json,couchdb,datetime,socket,random,shutil
 
