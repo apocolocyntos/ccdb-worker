@@ -14,7 +14,8 @@ create the config file „config.json“ in the same directory following this sc
 		"password": ""
 	},
 	"jobs": {
-		"directory": ""
+		"directory": "",
+		"archive": ""
 	},
 	"programs": {
 		"orca": {

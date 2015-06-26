@@ -88,6 +88,7 @@ db = server[db_name]
 
 
 work_dir = settings['jobs']['directory']
+archive_dir = settings['jobs']['archive']
 orca = settings['programs']['orca']['path']
 input_file = "job.inp"
 output_file = "job.out"
@@ -149,5 +150,5 @@ while True:
 			f = open(job_dir + '/' + 'id','w')
 			f.write(doc['_id'])
 			f.close()
-			make_tarfile(job_dir + '.tar.gz', job_dir)
+			make_tarfile(job_dir + '.tar.gz', archive_dir)
 		shutil.rmtree(job_dir)
