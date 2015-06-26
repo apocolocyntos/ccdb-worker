@@ -51,7 +51,7 @@ def run_orca(program,job_dir,calculation_setup):
 	f.write("*\n")
 	f.close()
 	# run program
-	os.system("nohup " + program + " " + job_dir + "/" + input_file + " > " + job_dir + "/" + output_file)
+	os.system("nohup " + program + "/orca " + job_dir + "/" + input_file + " > " + job_dir + "/" + output_file)
 	f = open(job_dir + '/' + output_file, 'r')
 	if '                             ****ORCA TERMINATED NORMALLY****\n' in f.readlines():
 		return True
