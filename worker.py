@@ -119,6 +119,8 @@ while True:
 		
 		job_dir = work_dir + '/' + doc['_id']
 		
+		print doc['_id']
+
 		# run the program
 		
 		if not os.path.exists(job_dir):
