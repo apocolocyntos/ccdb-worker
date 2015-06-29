@@ -120,7 +120,7 @@ while True:
 		job_dir = work_dir + '/' + doc['_id']
 		
 		# run the program
-
+		
 		if not os.path.exists(job_dir):
 			os.makedirs(job_dir)
 		
@@ -150,5 +150,5 @@ while True:
 			f = open(job_dir + '/' + 'id','w')
 			f.write(doc['_id'])
 			f.close()
-			make_tarfile(archive_dir + '/' + id + '.tar.gz', job_dir)
+			make_tarfile(archive_dir + '/' + doc['_id'] + '.tar.gz', job_dir)
 		shutil.rmtree(job_dir)
