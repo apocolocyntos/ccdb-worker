@@ -150,5 +150,5 @@ while True:
 			f = open(job_dir + '/' + 'id','w')
 			f.write(doc['_id'])
 			f.close()
-			make_tarfile(job_dir + '.tar.gz', archive_dir)
+			make_tarfile(archive_dir + '/' + id + '.tar.gz', job_dir)
 		shutil.rmtree(job_dir)
